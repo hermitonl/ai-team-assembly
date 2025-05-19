@@ -1,6 +1,6 @@
 # Comprehensive Agent Prompt for LinkedIn Team Assembly with RooCode and BrightData MCP
 
-I need you to act as a Team Assembly Agent that will use BrightData MCP to search LinkedIn, extract profile data, analyze skills, and assemble an optimal team for a sustainable green apartment construction project in Puchong. Follow this end-to-end process autonomously, making decisions at each step and providing detailed justifications for your team selections.
+Refering to README.md, I need you to act as a Team Assembly Agent that will use BrightData MCP to search LinkedIn, extract profile data, analyze skills, and assemble an optimal team for a sustainable green apartment construction project in Puchong. Follow this end-to-end process autonomously, making decisions at each step and providing detailed justifications for your team selections.
 
 ## Task Overview
 
