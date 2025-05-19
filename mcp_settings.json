@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "BrightData": { 
+      "command": "/full/path/to/your/npx", 
+      "args": ["@brightdata/mcp"],
+      "env": {
+        "API_TOKEN": "<YOUR_BRIGHTDATA_API_TOKEN>",
+        "WEB_UNLOCKER_ZONE": "<your_web_unlocker_zone_name_if_not_mcp_unlocker>", 
+        "BROWSER_AUTH": "<your_browser_api_auth_string>" 
+      },
+      "disabled": false, 
+      "alwaysAllow": []  
+    }
+  }
+}
