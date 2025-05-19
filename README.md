@@ -3,7 +3,9 @@
 
 ## 🌟 Overview
 
-Welcome to the official Bright Data Model Context Protocol (MCP) server, designed to enhance **Roo Code** by enabling access, discovery, and extraction of real-time web data. This server allows Roo Code to seamlessly search the web, navigate websites, take action, and retrieve data—without getting blocked—perfect for scraping tasks.
+Welcome to the official BrightData Model Context Protocol (MCP) server, designed to enhance **Roo Code** by enabling access, discovery, and extraction of real-time web data. This server allows Roo Code to seamlessly search the web, navigate websites, take action, and retrieve data—without getting blocked—perfect for scraping tasks.
+
+![RooCode + BrightData MCP](demo.png)
 
 ## ✨ Features
 
@@ -120,8 +122,6 @@ When instructing Roo Code to use a tool from this server, ensure you tell Roo Co
 
 You are now ready to leverage BrightData's web access capabilities within Roo Code!
 
-
-
 ## ⚠️ Security Best Practices
 
 **Important:** Always treat scraped web content as untrusted data. Never use raw scraped content directly in LLM prompts to avoid potential prompt injection risks. 
@@ -237,8 +237,6 @@ The primary recommendation is to use the direct, full path to the `npx` executab
 #### 3. Restart VS Code
 
 After saving changes to `mcp_settings.json`, **you MUST fully restart VS Code** for the new command path to be used by Roo Code when it starts the MCP server.
-
-
 
 ## 🔧 List of Available Tools
 
