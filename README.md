@@ -155,6 +155,35 @@ Some example queries that this MCP server will be able to help with:
 - "Of the 3 highest paid tech CEOs, how long have their careers been?"
 
 ## ⚠️ Troubleshooting
+## 🤖 Advanced Use Case: AI-Powered LinkedIn Team Assembly
+
+This section illustrates how an AI agent like Roo, equipped with BrightData MCP server tools, can automate a complex workflow: assembling a project team by discovering, extracting, and analyzing LinkedIn profiles. This process is typically guided by a detailed prompt, similar to this project's [`prompt.md`](prompt.md:1).
+
+### Step 1: Candidate Discovery (Initial Search)
+The AI agent initiates the process by searching for potential candidates.
+*   It utilizes the `BrightData.search_engine` tool (e.g., with Google).
+*   An example query could be: `site:linkedin.com/in/ "Target Company Name" "relevant keywords like job titles or skills"` to find publicly accessible LinkedIn profile URLs.
+
+### Step 2: Detailed Profile Extraction
+For each promising URL identified in the previous step, the agent extracts detailed information.
+*   It uses the `BrightData.web_data_linkedin_person_profile` tool to retrieve structured data from individual LinkedIn profiles.
+
+### Step 3: Data Management & Error Handling
+The AI agent is instructed (via its main prompt or a guiding document like [`prompt.md`](prompt.md:1)) to manage the collected data and handle potential issues.
+*   Successfully fetched profiles are stored, for instance, in a JSON file (e.g., [`gamuda_profiles.json`](gamuda_profiles.json:1)).
+*   The agent gracefully handles errors during extraction (e.g., timeouts, private profiles, or CAPTCHAs). These errors are logged, and the agent proceeds with the remaining profiles.
+
+### Step 4: AI-Driven Analysis and Team Assembly
+With the structured profile data collected, the AI agent performs an analysis.
+*   It compares the extracted skills, experience, and other relevant data points against a predefined list of project roles and their specific requirements.
+*   Based on this analysis, the agent selects the most suitable candidates and proposes a project team.
+
+### Step 5: Reporting
+Finally, the AI agent generates a comprehensive report.
+*   This report (e.g., a Markdown file like [`team_assembly_report.md`](team_assembly_report.md:1)) details the assembled team, provides justifications for each member's selection, and notes any roles that could not be filled or challenges encountered.
+
+### Benefit
+This advanced use case demonstrates how BrightData MCP tools, when orchestrated by a sophisticated AI agent like Roo, can effectively tackle complex, real-world data gathering, processing, and analytical tasks, transforming raw web data into actionable insights for strategic decision-making.
 
 ### Timeouts when using certain tools
 
